@@ -1,0 +1,26 @@
+jobs:
+  - name: w16test
+    type: runSh
+    steps:
+      - TASK:
+          runtime:
+            options:
+              imageName: "drydock/w16"
+              imageTag: master
+          script:
+         
+            - python --version
+            - node --version
+            - git lfs version
+            - javac -version
+            - ruby --version
+            - gcloud -version
+            - aws --version
+            - az --version
+            - jfrog --version
+            - terraform -version
+            - packer --version
+            - jq --version
+            - kubectl version
+            - docker --version
+            

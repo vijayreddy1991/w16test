@@ -15,7 +15,7 @@ jobs:
             - git lfs version
             - javac -version
             - ruby --version
-            - gcloud -version
+            - gcloud version
             - aws --version
             - az --version
             - jfrog --version

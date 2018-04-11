@@ -22,6 +22,6 @@ jobs:
             - terraform -version
             - packer --version
             - jq --version
-            - cniversion
+            - kubectl version --client
             - docker --version
             

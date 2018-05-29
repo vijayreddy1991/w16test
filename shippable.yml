@@ -12,6 +12,7 @@ jobs:
           script:         
             - python --version
             - node --version
+            - git --version
             - git lfs version
             - javac -version
             - ruby --version

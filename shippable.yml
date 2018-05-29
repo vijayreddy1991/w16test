@@ -14,7 +14,6 @@ jobs:
             - node --version
             - git --version
             - git lfs version
-            - javac -version
             - ruby --version
             - gcloud version
             - aws --version
@@ -25,4 +24,5 @@ jobs:
             - jq --version
             - kubectl version --client
             - docker --version
+            - java --version
             

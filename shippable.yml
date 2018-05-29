@@ -9,10 +9,10 @@ jobs:
             options:
               imageName: "drydock/w16"
               imageTag: master
-          script:         
-            #- python --version
-            - node --version
+          script:  
             - git --version
+            - python --version
+            - node --version
             - git lfs version
             - ruby --version
             - gcloud version

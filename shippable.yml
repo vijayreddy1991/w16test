@@ -24,5 +24,5 @@ jobs:
             - jq --version
             - kubectl version --client
             - docker --version
-            - java --version
+            - javac --version
             

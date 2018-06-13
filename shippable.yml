@@ -26,29 +26,29 @@ jobs:
             - docker --version
             - javac --version
   - name: dotnettest
-   type: runSh
-   runtime:
-     nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
-   steps:
-     - IN: w16test
-     - TASK: 
-         runtime:
-           options:
-             imageName: "drydock/w16dotnetcore"
-             imageTag: master
-         script:        
-           - dotnet --version  
+    type: runSh
+    runtime:
+      nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
+    steps:
+      - IN: w16test
+      - TASK: 
+          runtime:
+            options:
+              imageName: "drydock/w16dotnetcore"
+              imageTag: master
+          script:        
+            - dotnet --version  
    - name: aspdotnettest
-   type: runSh
-   runtime:
-     nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
-   steps:
-     - IN: dotnettest
-     - TASK:
-         runtime:
-           options:
-             imageName: "drydock/w16aspnetcore"
-             imageTag: master
-         script:        
-           - dotnet --info           
+     type: runSh
+     runtime:
+       nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
+     steps:
+       - IN: dotnettest
+       - TASK:
+           runtime:
+             options:
+               imageName: "drydock/w16aspnetcore"
+               imageTag: master
+           script:        
+             - dotnet --info           
             

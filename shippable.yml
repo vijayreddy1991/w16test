@@ -38,7 +38,7 @@ jobs:
               imageTag: master
           script:        
             - dotnet --version  
-  - name: aspdo-tnettest
+  - name: aspdotnet-test
     type: runSh
     runtime:
       nodePool: dynamic__x86_64__WindowsServer_2016__c4_large

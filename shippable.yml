@@ -25,7 +25,7 @@ jobs:
             - kubectl version --client
             - docker --version
             - javac --version
-  - name: dotnettest
+  - name: dotnet-test
     type: runSh
     runtime:
       nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
@@ -38,12 +38,12 @@ jobs:
               imageTag: master
           script:        
             - dotnet --version  
-  - name: aspdotnettest
+  - name: aspdo-tnettest
     type: runSh
     runtime:
       nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
     steps:
-      - IN: dotnettest
+      - IN: dotnet-test
       - TASK:
           runtime:
             options:

@@ -25,7 +25,7 @@ jobs:
             - kubectl version --client
             - docker --version
             - javac --version
-  - name: dotnet-test
+  - name: dotnettest
     type: runSh
     runtime:
       nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
@@ -43,7 +43,7 @@ jobs:
     runtime:
       nodePool: dynamic__x86_64__WindowsServer_2016__c4_large
     steps:
-      - IN: dotnet-test
+      - IN: dotnettest
       - TASK:
           runtime:
             options:

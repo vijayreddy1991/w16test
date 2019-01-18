@@ -24,7 +24,7 @@ jobs:
             - jq --version
             - kubectl version --client
             - docker --version
-            - javac --version
+            - java --version
   - name: dotnettest
     type: runSh
     runtime:

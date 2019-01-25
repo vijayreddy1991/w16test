@@ -25,6 +25,8 @@ jobs:
             - kubectl version --client
             - docker --version
             - java --version
+            - choco list
+            - choco --version
   - name: dotnettest
     type: runSh
     runtime:

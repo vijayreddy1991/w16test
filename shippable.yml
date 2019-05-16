@@ -27,6 +27,7 @@ jobs:
             - java --version
             - choco list
             - choco --version
+            - npm --version
   - name: dotnettest
     type: runSh
     runtime:
